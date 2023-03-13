@@ -14,7 +14,7 @@ To develop with this template, install the following:
 
 ### Password Handling
 
-This uses the Local Host File Method of password handling outlined in: <https://sjrwmd.atlassian.net/wiki/spaces/DB/pages/979763204/Docker+Container+Password+Handling>.
+This uses a local host file method of password handling which mimics Docker Secrets.
 
 The `util/systempassword.py` contains the Python class for looking up credentials.  In the `passwordlookup.py` example code, these lines utilize this class to lookup the user password:
 
