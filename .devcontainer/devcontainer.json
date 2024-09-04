@@ -45,6 +45,7 @@
     
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	, "remoteUser": "vscode"
+	, "containerUser": "vscode"
 
 	// Mounts the secret file data into the container, but doesn't include the secret file itself.
 	// **** Important: Update the source folder location where your copy of the secrets file is located
@@ -52,7 +53,7 @@
 	// --mount type=bind,readonly,source=C:\\TEMP\\docker-secrets,target=/run/secrets
 	// or, on Linux:
 	// --mount type=bind,readonly,source=/root/secrets,target=/run/secrets
-	, "mounts": ["source=C:\\TEMP\\docker-secrets,target=/run/secrets,type=bind,consistency=cached"]
+	//, "mounts": ["source=~/docker-secrets,target=/run/secrets,type=bind,consistency=cached"]
 
 	// Sets container runtime arguments for DNS search path and the container's hostname.
 	// Modify or exclude the --hostname value if desired.
